@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    #special{
+        color:rgb(248, 135, 6);
+    }
+    .one{
+        background-color: brown;
+    }
+    .two{
+        background-color: aquamarine;
+    }
+    
+   </style>
+</head>
+<body>
+    <div id="special" class="one">
+        <p>This is division one</p>
+
+    </div>
+    <form>
+    Name:<input type="text" id="fn"><br>
+    Age:<input type="text" id="fm">
+    </form>
+    <script>
+        var x=document.getElementById("special")
+        // x.style.color="violet";
+        // x.style.border="black solid 5px";
+        
+        // x.setAttribute("class","two")
+        // console.log(x.getAttribute("class"))
+
+        // var x=document.getElementById("fn")
+        // console.log(x.getAttribute("value"))
+        // x.setAttribute("value","ABC")
+        var x=document.getElementById("special")
+        x.classList.add("two")
+       console.log(x.classList)
+       var element=document.getElementById("fm")
+    //    element.style.marginTop:"20px";
+    </script>
+</body>
+</html>
